@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Playful Stockie Welcome</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono&amp;family=Plus+Jakarta+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3A6FF8",
+                        "accent": "#36C1A2",
+                        "alert": "#FF6B6B",
+                        "success": "#22C55E",
+                        "background-light": "#F7F9FC",
+                        "background-dark": "#1F2937",
+                        "text-dark": "#374151",
+                        "text-light": "#F7F9FC"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .font-heading {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+        .font-body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }.icon-shape-1 {
+            background-color: #A7F0FF;border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .icon-shape-2 {
+            background-color: #FFDAF9;border-radius: 60% 40% 40% 60% / 30% 60% 40% 70%;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .icon-shape-3 {
+            background-color: #E6FFB7;border-radius: 70% 30% 60% 40% / 40% 70% 30% 60%;
+            padding: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }.whimsical-gradient-bg {
+            background: linear-gradient(to bottom, #A7F0FF 0%, #FFDAF9 50%, #FDF6ED 100%);}.dark .whimsical-gradient-bg {
+             background: linear-gradient(to bottom, #3E5F7C 0%, #5C4F7C 50%, #1F2937 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="relative flex h-[40dvh] w-full flex-col items-center justify-center p-4 whimsical-gradient-bg">
+<div class="absolute inset-0 z-0">
+<svg class="absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-40" preserveAspectRatio="none" viewBox="0 0 100 100">
+<defs>
+<pattern height="10" id="dot-pattern" patternUnits="userSpaceOnUse" width="10">
+<circle class="dark:fill-primary/20" cx="2" cy="2" fill="rgba(255,255,255,0.4)" r="1"></circle>
+</pattern>
+</defs>
+<rect fill="url(#dot-pattern)" height="100" width="100" x="0" y="0"></rect>
+<path class="dark:fill-primary/30" d="M0 0 L100 20 L100 0 Z" fill="rgba(255,255,255,0.3)"></path>
+<path class="dark:fill-primary/30" d="M0 100 L100 80 L100 100 Z" fill="rgba(255,255,255,0.3)"></path>
+</svg>
+</div>
+<h1 class="relative z-10 text-center font-heading text-4xl sm:text-5xl text-text-dark dark:text-text-light drop-shadow-lg leading-tight">
+        Welcome to <span class="text-primary dark:text-accent">Stockie</span>
+</h1>
+<p class="relative z-10 text-center font-body text-lg sm:text-xl text-text-dark dark:text-text-light mt-2 drop-shadow-md max-w-sm">
+        Simplify your shop, grow your business.
+    </p>
+</div>
+<div class="flex flex-col flex-grow w-full px-4 pt-8 pb-4 bg-background-light dark:bg-background-dark -mt-8 relative z-20 rounded-t-3xl shadow-lg">
+<div class="flex flex-col gap-6 max-w-[480px] mx-auto w-full">
+<h2 class="font-heading text-2xl text-center text-text-dark dark:text-text-light mb-4">How Stockie Helps You</h2>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-700 text-text-dark dark:text-text-light shadow-xl relative -rotate-1 translate-x-1 sm:translate-x-4">
+<div class="icon-shape-1 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl">inventory_2</span>
+</div>
+<div class="text-center sm:text-left">
+<h3 class="font-heading text-xl sm:text-2xl">Easy Inventory</h3>
+<p class="font-body text-base mt-1 text-gray-700 dark:text-gray-300">Keep track of your stock effortlessly, even offline.</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-700 text-text-dark dark:text-text-light shadow-xl relative rotate-1 -translate-x-1 sm:-translate-x-4">
+<div class="icon-shape-2 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl">point_of_sale</span>
+</div>
+<div class="text-center sm:text-left">
+<h3 class="font-heading text-xl sm:text-2xl">Quick Sales</h3>
+<p class="font-body text-base mt-1 text-gray-700 dark:text-gray-300">Record sales in seconds with intuitive forms.</p>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-5 rounded-2xl bg-white dark:bg-gray-700 text-text-dark dark:text-text-light shadow-xl relative -rotate-1 translate-x-1 sm:translate-x-2">
+<div class="icon-shape-3 flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-4xl">trending_up</span>
+</div>
+<div class="text-center sm:text-left">
+<h3 class="font-heading text-xl sm:text-2xl">Track Growth</h3>
+<p class="font-body text-base mt-1 text-gray-700 dark:text-gray-300">See your business performance at a glance.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 py-8 bg-background-light dark:bg-background-dark mt-auto relative z-20">
+<div class="flex flex-1 gap-4 max-w-[480px] flex-col items-stretch mx-auto">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-5 bg-primary text-white text-lg font-heading leading-normal tracking-[0.015em] w-full shadow-lg hover:shadow-xl transition-all duration-200">
+<span class="truncate">Register</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-5 bg-transparent text-primary dark:text-primary text-lg font-heading leading-normal tracking-[0.015em] w-full border-2 border-primary shadow-md hover:shadow-lg transition-all duration-200">
+<span class="truncate">Login</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>
