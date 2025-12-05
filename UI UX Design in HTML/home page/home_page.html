@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3a70f8",
+              "background-light": "#F7F9FC",
+              "background-dark": "#101523",
+              "accent": "#36C1A2",
+              "alert": "#FF6B6B",
+              "success": "#22C55E",
+              "text-primary": "#111827",
+              "text-secondary": "#6b7280",
+              "border-color": "#E5E7EB",
+              "dark-text-primary": "#F9FAFB",
+              "dark-text-secondary": "#9CA3AF",
+              "dark-border-color": "#374151"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.5rem", 
+                "lg": "0.75rem",
+                "xl": "1rem", 
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex flex-col gap-2 p-4 pb-2 bg-background-light dark:bg-background-dark sticky top-0 z-10 border-b border-border-color dark:border-dark-border-color">
+<div class="flex items-center h-12 justify-between">
+<div class="flex size-12 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC_o-MvFd2LwVbHVCUNJDo7l1tcmA-PPn5wAUZQtuB5n_yInhlQKfs1giIRugBzS3JEjrm6tEOCIjvtoelOaelK7o9OPXbi9UOK8-h6Zo5R2Mg2oyXcmTmYVgvXFueMjzumidJnj6arkeSmyMKgp8R-ik5ubObrKnOJq3rEddTCLysBToTxqTsJWpluGYxhv_-6fCi6Ij74tuQb8GE9ex5e2edkHvVsjh2lM8p_Rn9b-dS57QrmLU-1Wno1d1fZJN8Sj9FYYpqk-rAh");'></div>
+</div>
+<div class="flex w-auto items-center justify-end gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-text-primary dark:text-dark-text-primary">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-transparent text-text-primary dark:text-dark-text-primary">
+<span class="material-symbols-outlined text-2xl">settings</span>
+</button>
+</div>
+</div>
+<p class="text-text-primary dark:text-dark-text-primary tracking-tight text-[28px] font-bold leading-tight">Good Morning, Shopkeeper</p>
+</div>
+<!-- Main content area -->
+<main class="flex-1 pb-24">
+<!-- Stats Grid -->
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-4 border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800">
+<p class="text-text-primary dark:text-dark-text-primary text-sm font-medium leading-normal">Today's Sales</p>
+<p class="text-text-primary dark:text-dark-text-primary tracking-tight text-2xl font-bold leading-tight">₹1,250</p>
+<p class="text-success text-sm font-medium leading-normal flex items-center gap-1"><span class="material-symbols-outlined text-base">arrow_upward</span>+5.2%</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-4 border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800">
+<p class="text-text-primary dark:text-dark-text-primary text-sm font-medium leading-normal">Today's Profit</p>
+<p class="text-text-primary dark:text-dark-text-primary tracking-tight text-2xl font-bold leading-tight">₹480</p>
+<p class="text-success text-sm font-medium leading-normal flex items-center gap-1"><span class="material-symbols-outlined text-base">arrow_upward</span>+3.1%</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-4 border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800">
+<p class="text-text-primary dark:text-dark-text-primary text-sm font-medium leading-normal">Items in Stock</p>
+<p class="text-text-primary dark:text-dark-text-primary tracking-tight text-2xl font-bold leading-tight">312</p>
+<p class="text-alert text-sm font-medium leading-normal flex items-center gap-1"><span class="material-symbols-outlined text-base">arrow_downward</span>-1.5%</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-4 border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800">
+<p class="text-text-primary dark:text-dark-text-primary text-sm font-medium leading-normal">Pending Payments</p>
+<p class="text-text-primary dark:text-dark-text-primary tracking-tight text-2xl font-bold leading-tight">₹2,100</p>
+<p class="text-alert text-sm font-medium leading-normal flex items-center gap-1"><span class="material-symbols-outlined text-base">arrow_upward</span>+10%</p>
+</div>
+</div>
+<!-- Quick Actions Grid -->
+<div class="grid grid-cols-2 gap-3 p-4">
+<div class="flex flex-1 gap-3 rounded-lg border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800 p-4 flex-col items-start text-left">
+<div class="text-primary"><span class="material-symbols-outlined text-2xl">add</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-tight">Add Sale</h2>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Record a new transaction</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800 p-4 flex-col items-start text-left">
+<div class="text-primary"><span class="material-symbols-outlined text-2xl">shopping_cart</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-tight">Add Purchase</h2>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Update your stock</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800 p-4 flex-col items-start text-left">
+<div class="text-primary"><span class="material-symbols-outlined text-2xl">inventory_2</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-tight">View Inventory</h2>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Check all items</p>
+</div>
+</div>
+<div class="flex flex-1 gap-3 rounded-lg border border-border-color dark:border-dark-border-color bg-white dark:bg-gray-800 p-4 flex-col items-start text-left">
+<div class="text-primary"><span class="material-symbols-outlined text-2xl">barcode_scanner</span></div>
+<div class="flex flex-col gap-1">
+<h2 class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-tight">Scan Barcode</h2>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Quickly add products</p>
+</div>
+</div>
+</div>
+<!-- AI Insights Section -->
+<h3 class="text-text-primary dark:text-dark-text-primary text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">AI Insights &amp; Suggestions</h3>
+<div class="flex flex-col gap-2 px-4">
+<div class="flex gap-4 bg-white dark:bg-gray-800 p-4 justify-between items-center rounded-lg border border-border-color dark:border-dark-border-color">
+<div class="flex items-start gap-4">
+<div class="text-alert flex items-center justify-center rounded-full bg-alert/10 shrink-0 size-10"><span class="material-symbols-outlined text-xl">warning</span></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-normal">Low Stock Alert</p>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Parle-G biscuits are running low. Only 5 units left.</p>
+</div>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-8 px-4 bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary-300 text-sm font-medium leading-normal w-fit">
+<span class="truncate">Reorder</span>
+</button>
+</div>
+<div class="flex gap-4 bg-white dark:bg-gray-800 p-4 justify-between items-center rounded-lg border border-border-color dark:border-dark-border-color">
+<div class="flex items-start gap-4">
+<div class="text-accent flex items-center justify-center rounded-full bg-accent/10 shrink-0 size-10"><span class="material-symbols-outlined text-xl">trending_up</span></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-normal">Sales Trend</p>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Lays Chips are selling fast this week.</p>
+</div>
+</div>
+</div>
+<div class="flex gap-4 bg-white dark:bg-gray-800 p-4 justify-between items-center rounded-lg border border-border-color dark:border-dark-border-color">
+<div class="flex items-start gap-4">
+<div class="text-primary flex items-center justify-center rounded-full bg-primary/10 shrink-0 size-10"><span class="material-symbols-outlined text-xl">insights</span></div>
+<div class="flex flex-1 flex-col justify-center">
+<p class="text-text-primary dark:text-dark-text-primary text-base font-bold leading-normal">Demand Forecast</p>
+<p class="text-text-secondary dark:text-dark-text-secondary text-sm font-normal leading-normal">Expecting higher demand for cold drinks on Saturday.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 h-20 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-t border-border-color dark:border-dark-border-color flex justify-around items-center px-4 pb-2 z-20">
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary dark:text-dark-text-secondary w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl">inventory</span>
+<span class="text-xs font-medium">Inventory</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary dark:text-dark-text-secondary w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl">bar_chart</span>
+<span class="text-xs font-medium">Reports</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary dark:text-dark-text-secondary w-1/4" href="#">
+<span class="material-symbols-outlined text-2xl">groups</span>
+<span class="text-xs font-medium">Customers</span>
+</a>
+</nav>
+</div>
+</body></html>
